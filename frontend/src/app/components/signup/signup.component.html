@@ -1,0 +1,120 @@
+<div
+  class="min-h-screen bg-transparent py-6 flex flex-col justify-center sm:py-12"
+>
+  <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+    <div
+      class="absolute inset-0 bg-gradient-to-br from-purple-950 to-black/90 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"
+    ></div>
+    <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
+      <div class="max-w-md mx-auto">
+        <div>
+          <h1 class="text-2xl font-semibold">Register</h1>
+        </div>
+        <div class="divide-y divide-gray-200">
+          <form
+            [formGroup]="signupForm"
+            (ngSubmit)="onSubmit()"
+            class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7"
+          >
+            <div class="relative">
+              <input
+                autocomplete="off"
+                id="email"
+                name="email"
+                type="email"
+                formControlName="email"
+                class="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:border-purple-600"
+                placeholder="Email address"
+              />
+              <label
+                for="email"
+                class="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"
+                >Email Address</label
+              >
+              <div
+                *ngIf="submitted && f['email'].errors"
+                class="text-red-500 mt-1 text-sm"
+              >
+                <div *ngIf="f['email'].errors['required']">
+                  Email is required
+                </div>
+                <div *ngIf="f['email'].errors['email']">
+                  Email must be valid
+                </div>
+              </div>
+            </div>
+            <div class="relative">
+              <input
+                autocomplete="off"
+                id="password"
+                name="password"
+                type="password"
+                formControlName="password"
+                class="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:border-purple-600"
+                placeholder="Password"
+              />
+              <label
+                for="password"
+                class="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"
+                >Password</label
+              >
+              <div
+                *ngIf="submitted && f['password'].errors"
+                class="text-red-500 mt-1 text-sm"
+              >
+                <div *ngIf="f['password'].errors['required']">
+                  password is required
+                </div>
+              </div>
+            </div>
+            <div class="relative">
+              <input
+                autocomplete="off"
+                id="confirm-password"
+                name="confirm-password"
+                formControlName="confirm_password"
+                type="text"
+                class="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:border-purple-600"
+                placeholder="confirm Password"
+              />
+              <label
+                for="confirm-password"
+                class="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"
+                >Confirm Password</label
+              >
+              <div
+                *ngIf="submitted && f['confirm_password'].errors"
+                class="text-red-500 mt-1 text-sm"
+              >
+                <div *ngIf="f['confirm_password'].errors['required']">
+                  Confirm password is required
+                </div>
+                <div *ngIf="f['confirm_password'].errors['passwordMismatch']">
+                  Passwords do not match
+                </div>
+              </div>
+            </div>
+            <div class="relative">
+              <button
+                class="bg-purple-500 cursor-pointer text-white rounded-md px-2 py-1"
+              >
+                Submit
+              </button>
+            </div>
+            <div *ngIf="error.length > 0" class="text-red-500 mt-1 text-sm">
+              {{ error }}
+            </div>
+            <div *ngIf="success" class="text-green-500 mt-1 text-sm">
+              Registration successful!
+            </div>
+            <p class="text-center font-semibold">----- Or -----</p>
+          </form>
+        </div>
+      </div>
+
+      <div class="w-full flex justify-center">
+        <div id="googleBtn"></div>
+      </div>
+    </div>
+  </div>
+</div>

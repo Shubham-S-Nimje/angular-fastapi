@@ -1,0 +1,45 @@
+# ================================
+# Global Ignores
+# ================================
+*.log
+*.pyc
+__pycache__/
+.env
+.vscode/
+.DS_Store
+*.sqlite3
+
+# Ignore virtual environments
+venv/
+.env/
+*.env
+
+# ================================
+# Angular Frontend
+# ================================
+/frontend/node_modules/
+frontend/dist/
+/frontend/.angular/
+/frontend/.env
+
+# npm logs
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# Angular environment
+frontend/src/environments/environment.ts
+frontend/src/environments/environment.prod.ts
+
+# ================================
+# FastAPI Backend
+# ================================
+/backend/.env
+/backend/__pycache__/
+/backend/instance/
+/backend/.pytest_cache/
+/backend/.mypy_cache/
+/backend/.coverage
+/backend/htmlcov/
+/backend/venv/
+/backend/.venv/

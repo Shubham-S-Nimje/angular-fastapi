@@ -1,0 +1,185 @@
+[
+  {
+    "id": 1,
+    "category": "personal_info",
+    "data": {
+      "name": "SHUBHAM S NIMJE",
+      "location": "Pune, 411001",
+      "phone": "9890960150",
+      "email": "shubhamsnimje@gmail.com",
+      "portfolio": "https://nimje.org/shubham-s-nimje",
+      "social_links": {
+        "linkedin": "https://www.linkedin.com/in/shubham-s-nimje/",
+        "twitter": "https://twitter.com/Shubham_S_Nimje",
+        "facebook": "https://www.facebook.com/shubham.nimje.90/",
+        "instagram": "https://www.instagram.com/shubham_s_nimje/",
+        "github": "https://github.com/Shubham-S-Nimje"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "category": "professional_summary",
+    "data": {
+      "title": "Full Stack Developer",
+      "experience": "2+ years",
+      "description": "Full Stack Developer with 2+ years of experience building scalable web applications using React.js, Next.js, Node.js, Python, and Django. Skilled in RESTful API development, cloud services, performance optimization, and responsive UI/UX design. Experienced in Redux, WebSockets, TypeScript, Angular and database management. Passionate about building high-performance, user-centric applications."
+    }
+  },
+  {
+    "id": 3,
+    "category": "technical_skills",
+    "data": {
+      "frontend": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "React.js",
+        "Next.js",
+        "Angular",
+        "Redux",
+        "TailwindCSS",
+        "Bootstrap"
+      ],
+      "backend": [
+        "Node.js",
+        "Express.js",
+        "Python",
+        "Django",
+        "FastAPI",
+        "REST API"
+      ],
+      "databases": ["MySQL", "MongoDB"],
+      "cloud_devops": [
+        "AWS (EC2, IAM, Lambda, RDS)",
+        "Docker",
+        "Git",
+        "GitHub Actions",
+        "Jenkins"
+      ],
+      "testing_tools": ["Jest", "Postman", "GitHub"],
+      "cms": ["WordPress", "WooCommerce"]
+    }
+  },
+  {
+    "id": 4,
+    "category": "professional_experience",
+    "data": [
+      {
+        "position": "Frontend Developer",
+        "duration": "May 2024 – Present",
+        "company": "Flavum HealthTech Pvt Ltd",
+        "location": "Remote",
+        "responsibilities": [
+          "Developed a scalable React.js based UI for online/offline doctor consultation booking platform",
+          "Implemented RESTful APIs, WebSockets, and JWT authentication for secure real-time interactions",
+          "Built reusable UI components and optimized performance to ensure a smooth user experience",
+          "Utilized AWS services (EC2, Lambda, RDS) enhancing application performance by 30%"
+        ]
+      },
+      {
+        "position": "Software Developer",
+        "duration": "April 2023 – May 2024",
+        "company": "Career Guidance Management",
+        "location": "Pune, India",
+        "responsibilities": [
+          "Built React/Next.js startup website increasing site traffic by 30% and user engagement by 25%",
+          "Implemented Redux state management reducing API calls by 40% and improving responsiveness"
+        ]
+      },
+      {
+        "position": "Web Developer (WordPress & WooCommerce)",
+        "duration": "November 2020 – August 2023",
+        "company": "Nimje Store",
+        "location": "Amravati, India",
+        "responsibilities": [
+          "Managed WooCommerce store achieving 15% sales increase through targeted optimization",
+          "Developed custom WordPress solutions expanding reach across multiple e-commerce platforms"
+        ]
+      },
+      {
+        "position": "Junior Engineer",
+        "duration": "November 2019 – July 2020",
+        "company": "NSSL LTD",
+        "location": "Nagpur, India",
+        "responsibilities": []
+      },
+      {
+        "position": "Maintenance Trainee",
+        "duration": "November 2018 – November 2019",
+        "company": "Varroc",
+        "location": "Aurangabad, India",
+        "responsibilities": []
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "category": "technical_projects",
+    "data": [
+      {
+        "name": "Flavum HealthTech - React App",
+        "url": "https://flavumhealth.com/",
+        "duration": "May 2024 – Present",
+        "company": "Flavum HealthTech Pvt Ltd",
+        "location": "Remote",
+        "description": "Doctor consultation booking platform enabling online/offline appointments with 30% improved user experience"
+      },
+      {
+        "name": "CG Management - Next.js App",
+        "url": "https://cgmanagement.in/",
+        "duration": "May 2023 – May 2024",
+        "company": "Career Guidance Management",
+        "location": "Remote",
+        "description": "Student guidance platform with interactive components increasing user inquiries by 40%"
+      },
+      {
+        "name": "Portfolio Website - Angular, FastAPI App",
+        "url": "https://github.com/Shubham-S-Nimje/angular-fastapi",
+        "duration": "May 2024 – Present",
+        "company": "Flavum HealthTech Pvt Ltd",
+        "location": "Remote",
+        "description": "Personal portfolio with Angular frontend and FastAPI backend implementing secure authentication system"
+      },
+      {
+        "name": "Kalarup Numerology Calculator - Next.js, Django App",
+        "url": "https://kalarup.com/",
+        "duration": "May 2023 – May 2024",
+        "company": "Career Guidance Management",
+        "location": "Remote",
+        "description": "Full-stack numerology calculation platform helping users with personalized numerology insights"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "category": "education",
+    "data": {
+      "institution": "Pote Education and Welfare Trust Group of Institution",
+      "degree": "BE in Electronics and Telecommunication",
+      "duration": "August 2014 - April 2018",
+      "location": "Amravati, India"
+    }
+  },
+  {
+    "id": 7,
+    "category": "soft_skills",
+    "data": [
+      "Problem Solving",
+      "Team Collaboration",
+      "Adaptability",
+      "UI/UX Design",
+      "Project Management"
+    ]
+  },
+  {
+    "id": 8,
+    "category": "api_endpoint",
+    "data": {
+      "endpoint": "/api/adminData",
+      "method": "GET",
+      "response": { "Hello": "World" }
+    }
+  }
+]
